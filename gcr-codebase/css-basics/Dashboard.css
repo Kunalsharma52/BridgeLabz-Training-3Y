@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.dashboard {
+    display: flex;
+    padding-top: 80px;
+}
+
+aside {
+    width: 200px;
+    height: 100vh;
+    background-color: lightblue;
+    padding: 20px;
+}
+
+aside a {
+    display: block;
+    padding: 15px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+.box {
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 3px 3px 10px gray;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard {
+        display: block;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        display: block;
+    }
+
+    .box {
+        margin: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    font-family: Arial;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 30%;
+    margin: 15px;
+    position: relative;
+    box-shadow: 3px 3px 10px gray;
+}
+
+.photo img {
+    width: 100%;
+    height: 200px;
+}
+
+.photo p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    opacity: 0;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo:hover p {
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .photo {
+        width: 80%;
+    }
+}
