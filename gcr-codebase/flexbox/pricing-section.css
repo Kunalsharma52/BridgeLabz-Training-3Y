@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    margin: 30px;
+}
+
+main {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+
+    padding: 30px;
+
+    background-color: lightgray;
+
+    transition: 0.3s;
+
+    animation: fadeIn 1s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.popular {
+    background-color: lightblue;
+
+    transform: scale(1.1);
+}
+
+button {
+    padding: 10px 20px;
+
+    border: none;
+
+    background-color: black;
+    color: white;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 750px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .popular {
+        transform: none;
+    }
+}

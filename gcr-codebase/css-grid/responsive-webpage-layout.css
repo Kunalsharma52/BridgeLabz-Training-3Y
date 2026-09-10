@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: lightblue;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+nav {
+    display: flex;
+
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+
+    color: black;
+}
+
+main {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+
+    padding: 20px;
+}
+
+article {
+    background-color: lightgray;
+
+    padding: 20px;
+}
+
+aside {
+    background-color: lightgreen;
+
+    padding: 20px;
+}
+
+/* Three boxes using Flexbox */
+
+.boxes {
+    display: flex;
+
+    gap: 20px;
+}
+
+.box {
+    background-color: white;
+
+    padding: 20px;
+
+    flex: 1;
+
+    text-align: center;
+}
+
+.title {
+    animation: showTitle 1s;
+}
+
+@keyframes showTitle {
+
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+footer {
+    background-color: lightblue;
+
+    text-align: center;
+
+    padding: 15px;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .boxes {
+        flex-direction: column;
+    }
+}

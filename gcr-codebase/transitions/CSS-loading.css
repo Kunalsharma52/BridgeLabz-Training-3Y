@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.loading {
+    display: flex;
+
+    gap: 15px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+
+    background-color: blue;
+
+    border-radius: 50%;
+
+    animation: move 1s infinite;
+}
+
+.circle1 {
+    animation-delay: 0s;
+}
+
+.circle2 {
+    animation-delay: 0.2s;
+}
+
+.circle3 {
+    animation-delay: 0.4s;
+}
+
+@keyframes move {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
