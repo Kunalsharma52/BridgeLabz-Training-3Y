@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+article {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+.serif {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.sans {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+mark {
+    background-color: yellow;
+    color: red;
+}
+
+strong {
+    color: blue;
+}
+
+em {
+    color: green;
+}
+
+article p:first-of-type::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+article p:first-of-type::first-line {
+    font-weight: bold;
+}

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 150px;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid black;
+
+    transition: border-color 0.3s;
+}
+
+.solid {
+    border-style: solid;
+}
+
+.dashed {
+    border-style: dashed;
+}
+
+.double {
+    border-style: double;
+}
+
+.groove {
+    border-style: groove;
+}
+
+.round1 {
+    border-radius: 10px;
+}
+
+.round2 {
+    border-radius: 40px;
+}
+
+.padding1 {
+    padding: 10px;
+}
+
+.padding2 {
+    padding: 30px;
+}
+
+.box:hover {
+    border-color: red;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}

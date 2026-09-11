@@ -1,0 +1,65 @@
+body {
+    font-family: Arial;
+    background-color: lightgray;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: green;
+}
+
+ul {
+    width: 300px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+li {
+    padding: 10px;
+}
+
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 8px;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+li:hover {
+    background-color: yellow;
+}
+
+input:focus {
+    background-color: lightyellow;
+}
+
+li:nth-child(2) {
+    color: red;
+}
+
+ul > li {
+    font-size: 18px;
+}
+
+h2 + ul {
+    background-color: white;
+}
+
+h2 ~ p {
+    color: purple;
+}
+
+body a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
