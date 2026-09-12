@@ -1,0 +1,55 @@
+p {
+    font-size: 18px;
+}
+
+.special {
+    color: blue;
+    font-weight: bold;
+}
+
+#unique {
+    color: red;
+}
+
+a[href] {
+    background-color: yellow;
+    padding: 5px;
+}
+
+.parent > p {
+    background-color: lightgreen;
+}
+
+.parent p {
+    padding: 8px;
+}
+
+.parent + p {
+    color: purple;
+}
+
+.parent ~ p {
+    border-left: 4px solid orange;
+    padding-left: 10px;
+}
+
+li {
+    margin: 5px;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd;
+}
