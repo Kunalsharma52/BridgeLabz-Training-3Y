@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: calc(25% - 15px);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: #cceeff;
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}

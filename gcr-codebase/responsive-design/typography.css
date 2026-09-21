@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 50px;
+}
+
+section {
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    p {
+        line-height: 1.8;
+    }
+}
