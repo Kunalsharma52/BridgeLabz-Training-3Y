@@ -1,0 +1,7 @@
+.pricing-card {
+    transition: 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
