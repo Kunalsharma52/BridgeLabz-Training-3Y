@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 50px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+}
+
+#dropdownButton {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.option {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: lightblue;
+}
+
+.options.show {
+    display: block;
+}
